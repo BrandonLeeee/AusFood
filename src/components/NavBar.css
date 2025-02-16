@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.menu-logo {
+    cursor: pointer;
+}
+
+.logo-cart {
+    cursor: pointer;
+    width: 2rem;
+}
+
+.brand {
+    text-decoration: none;
+    color: #000;
+}

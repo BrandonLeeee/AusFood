@@ -1,13 +1,11 @@
-import React from "react";
+import { useEffect } from "react";
 
-const StaticPage = ({ page }) => {
-  return (
-    <iframe
-      src={`/${page}.html`}
-      style={{ width: "100%", height: "100vh", border: "none" }}
-      title={page}
-    />
-  );
+const StaticPage = () => {
+  useEffect(() => {
+    window.location.href = "/home.html"; // Redirect to static page
+  }, []);
+
+  return null; // Prevent rendering inside a container
 };
 
 export default StaticPage;

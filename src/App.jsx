@@ -11,7 +11,7 @@ function App() {
       <CartProvider>
         <Routes>
           <Route path="/" element={<NavBar />}>
-            <Route index element={<StaticPage page="index" />} />
+            <Route index element={<StaticPage page="home" />} />
             <Route path="/cart" element={<Cart />} />
           </Route>
         </Routes>

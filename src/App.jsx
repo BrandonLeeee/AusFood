@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import Cart from "./routes/Cart";
-import Home from "./routes/Home";
+import StaticPage from "./components/StaticPage";
 import { CartProvider } from "./contexts/CartContext";
+import Cart from "./routes/Cart";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <CartProvider>
         <Routes>
           <Route path="/" element={<NavBar />}>
-            <Route index element={<Home />} />
+            <Route index element={<StaticPage page="index" />} />
             <Route path="/cart" element={<Cart />} />
           </Route>
         </Routes>

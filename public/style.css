@@ -1,24 +1,6 @@
 body{
     background-color: #ecedd2;
-}
-
-.top-side{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#list-bar{
-    font-size: 30px;
-}
-
-#title{
-    margin-top: 35px;
-}
-
-#cart{
-    font-size: 30px;
+    font-family: Inter;
 }
 
 #cardapio {
@@ -58,6 +40,27 @@ body{
   .btn-price{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
   }
   
+  .btn-add{
+    background-color: #c7e755;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 130px;
+    height: 50px;
+    margin-right: 8px;
+    border-radius: 15px;
+  }
+
+  .price{
+    margin-left: 15px;
+  }
+
+  .icone-add-cart{
+    margin-right: 5px;
+    padding: 5px;
+  }
